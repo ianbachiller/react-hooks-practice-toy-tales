@@ -1,9 +1,6 @@
 import React, { useState} from "react";
 
 function ToyCard({name, image, likes, toyObj, handleDeleteClick, handleLikeClick}) {
-  const [ deletedToy, setDeletedToy ] = useState({})
-
-
 
   return (
     <div className="card">

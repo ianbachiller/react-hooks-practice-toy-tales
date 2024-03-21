@@ -14,7 +14,9 @@ function ToyContainer({toys, handleDeleteClick, handleLikeClick}) {
       handleLikeClick={handleLikeClick}
       />)
   return (
-    <div id="toy-collection">{mapFinalToyList}</div>
+    <div id="toy-collection">
+      {mapFinalToyList}
+    </div>
   );
 }
 

@@ -6,6 +6,7 @@ import ToyContainer from "./ToyContainer";
 function App() {
   const [showForm, setShowForm] = useState(false); 
   const [finalToyList, setFinalToyList] = useState([])
+  const [ deletedToy, setDeletedToy ] = useState({})
   // const [toys, setToys] = useState([]);
 
 
@@ -32,11 +33,21 @@ function App() {
       })
 }
   function handleDeleteClick(toyObj){
+    console.log(toyObj)
+    setDeletedToy(toyObj)
     fetch(`http://localhost:3001/toys/${toyObj.id}`,{
       method: "DELETE",
     })
+      
       setFinalToyList(finalToyList.filter(toy => toy.id !== toyObj.id))
   }
+
+//Undo Button
+function handleUndoButton () {
+  console.log("UNdo:", deletedToy)
+  handleSubmit(deletedToy)
+}
+//Undo Button
 
   function handleClick() {
     setShowForm((showForm) => !showForm);
@@ -68,6 +79,7 @@ function App() {
       {showForm ? <ToyForm handleSubmit={handleSubmit}/> : null}
       <div className="buttonContainer">
         <button onClick={handleClick}>Add a Toy</button>
+        <button className="undoButton" onClick={handleUndoButton}>Undo</button>
       </div>
       <ToyContainer 
         toys={finalToyList} 
