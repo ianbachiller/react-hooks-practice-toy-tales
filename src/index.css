@@ -103,3 +103,97 @@ button:hover {
 .add-toy-form {
   text-align: auto;
 }
+
+
+
+
+
+
+/* //different set of CSS */
+
+
+
+
+/* 
+Resetting default margin and font family
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling header */
+/* #toy-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #515da2;
+  opacity: 0.8;
+  height: 7rem;
+  padding: 1rem;
+}
+
+#toy-header img {
+  height: 6rem;
+  width: auto;
+}
+
+/* Container for toy cards */
+/* #toy-collection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+} */
+
+/* Styling for individual card */
+/* .card {
+  text-align: center;
+  width: 15rem;
+  margin: 1rem;
+} */
+
+/* .card-content {
+  padding: 1rem;
+} */
+
+/* .card-description {
+  font-size: 14px;
+  color: #555; /* Darker text color */
+/* } */ 
+
+/* Button styling */
+/* .buttonContainer {
+  text-align: center;
+  padding: 1rem;
+} */
+
+/* Form styling */
+/* .add-toy-form {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+/* .input-text {
+  border: 1px solid #ddd; /* Light border */
+  /* border-radius: 5px;
+  height: 2rem;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  padding: 0.5rem; */
+/* }  */
+
+/* .submit {
+  background-color: #e04b52;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+} */
+
+/* .submit:hover {
+  background-color: #d2383b; /* Darker hover color */
+/* } */ 
